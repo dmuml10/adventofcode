@@ -51,20 +51,4 @@ object Day3TobogganTrajectory1 {
     counter
   }
 
-
-  /*
-  private def calculate(r: Int, c: Int, array: Array[Array[Char]]): Int =  { var column: Int = 0
-    var row: Int = 0
-    var counter: Int = 0
-    while ( { row < 323})  { column = column % 31
-    if (array(row)(column) == '#')  { counter += 1
-    }
-    row += r
-    column += c
-    }
-    System.out.println(counter)
-    return counter
-}
-   */
-
 }
