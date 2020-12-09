@@ -1,6 +1,6 @@
 package ge.dm
 
-object Day6CustomCustoms {
+object Day6CustomCustoms1 {
 
   def main(args: Array[String]): Unit = {
     print(solve())
