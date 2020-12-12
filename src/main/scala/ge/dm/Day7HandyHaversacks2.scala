@@ -65,5 +65,3 @@ object Day7HandyHaversacks2 {
   }
 
 }
-
-case class BagData(color: String, num: Int)
