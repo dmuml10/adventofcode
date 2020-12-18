@@ -3,15 +3,7 @@ package ge.dm
 object Day10AdapterArray1 {
 
   def main(args: Array[String]): Unit = {
-    try
-      {
-        print(solve())
-      }
-    catch
-      {
-        case _: Throwable => println("Exception during execution")
-      }
-
+    print(solve())
   }
 
   def readFile(filename: String): Seq[Long] = {
