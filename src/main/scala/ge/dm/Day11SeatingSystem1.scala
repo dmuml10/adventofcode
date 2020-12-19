@@ -1,6 +1,6 @@
 package ge.dm
 
-object Day11SeatingSystem {
+object Day11SeatingSystem1 {
 
   def main(args: Array[String]): Unit = {
     print(solve())
