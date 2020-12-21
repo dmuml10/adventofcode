@@ -18,7 +18,7 @@ object Day12RainRisk2 {
   def solve(): Int = {
     val lines = readFile("src/resources/RainRisk.txt")
 
-    var location = Location(0, 0, 'E')
+    var location = Waypoint(0, 0, 10, 4, 'E')
     for (line <- lines) {
       val code = line.charAt(0)
       val value = line.substring(1).toInt
@@ -48,13 +48,13 @@ object Day12RainRisk2 {
         Waypoint(x, y, x + WX, y + WY, old.direction)
       }
       case 'R' => {
-        Waypoint(old.x, old.y, getDirection(old.direction, 'R', value))
+        Waypoint(old.x, old.y, old.wx, old.wy, getDirection(old.direction, 'R', value))
       }
       case 'L' => {
-        Waypoint(old.x, old.y, getDirection(old.direction, 'L', value))
+        Waypoint(old.x, old.y, old.wx, old.wy, getDirection(old.direction, 'L', value))
       }
       case _ => {
-        Waypoint(0, 0, '?')
+        Waypoint(0, 0, 0, 0, '?')
       }
     }
     tempLocation
