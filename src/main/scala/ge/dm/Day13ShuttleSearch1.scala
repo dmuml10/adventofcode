@@ -3,13 +3,7 @@ package ge.dm
 object Day13ShuttleSearch1 {
 
   def main(args: Array[String]): Unit = {
-    try {
-
       print(solve())
-    }
-    catch{
-      case _: Throwable => println("Got some other kind of exception")
-    }
   }
 
   def readFile(filename: String): Seq[String] = {
