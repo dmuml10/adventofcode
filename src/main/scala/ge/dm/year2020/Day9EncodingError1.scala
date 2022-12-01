@@ -1,7 +1,7 @@
-package ge.dm
+package ge.dm.year2020
 
-import ge.dm.Day8HandheldHalting1.readFile
-import ge.dm.Day8HandheldHalting1.solve
+import Day8HandheldHalting1.readFile
+import Day8HandheldHalting1.solve
 
 import scala.collection.mutable.ListBuffer
 
@@ -30,7 +30,7 @@ object Day9EncodingError1 {
         return result
       }
       preList.remove(0)
-      preList.addOne(list(i))
+      preList += list(i)
     }
     0
   }

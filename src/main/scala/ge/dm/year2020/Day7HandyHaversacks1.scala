@@ -1,6 +1,6 @@
-package ge.dm
+package ge.dm.year2020
 
-object Day7HandyHaversacks2 {
+object Day7HandyHaversacks1 {
 
   def main(args: Array[String]): Unit = {
     print(solve())
@@ -65,3 +65,5 @@ object Day7HandyHaversacks2 {
   }
 
 }
+
+case class BagData(color: String, num: Int)

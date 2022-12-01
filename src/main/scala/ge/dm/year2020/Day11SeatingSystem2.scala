@@ -1,12 +1,12 @@
-package ge.dm
+package ge.dm.year2020
 
-import ge.dm.Day11SeatingSystem1.applyFirstRule
-import ge.dm.Day11SeatingSystem1.applySecondRule
-import ge.dm.Day11SeatingSystem1.calculateAdjSitNum
-import ge.dm.Day11SeatingSystem1.calculateOccupiedSits
-import ge.dm.Day11SeatingSystem1.compare
-import ge.dm.Day11SeatingSystem1.copy
-import ge.dm.Day11SeatingSystem1.readIntoMatrix
+import Day11SeatingSystem1.applyFirstRule
+import Day11SeatingSystem1.applySecondRule
+import Day11SeatingSystem1.calculateAdjSitNum
+import Day11SeatingSystem1.calculateOccupiedSits
+import Day11SeatingSystem1.compare
+import Day11SeatingSystem1.copy
+import Day11SeatingSystem1.readIntoMatrix
 
 object Day11SeatingSystem2 {
 

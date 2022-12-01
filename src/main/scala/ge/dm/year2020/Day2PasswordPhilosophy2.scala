@@ -1,6 +1,6 @@
-package ge.dm
+package ge.dm.year2020
 
-object Day2PasswordPhilosophy1 {
+object Day2PasswordPhilosophy2 {
 
   def main(args: Array[String]): Unit = {
     print(solve())
@@ -25,18 +25,7 @@ object Day2PasswordPhilosophy1 {
     var counter = 0;
     val data = readFile("src/resources/PasswordPhilosophy.txt");
     for (passData: PassData <- data) {
-      val num = calculateCharOccurrence(passData.password, passData.char)
-      if (num >= passData.min && num <= passData.max) {
-        counter += 1
-      }
-    }
-    counter
-  }
-
-  def calculateCharOccurrence(password: String, char: String): Int = {
-    var counter = 0;
-    for (c <- password) {
-      if (c == char.charAt(0)) {
+      if (passData.password.charAt(passData.min-1) == passData.char.charAt(0) ^ passData.password.charAt(passData.max-1) == passData.char.charAt(0)) {
         counter += 1
       }
     }
@@ -44,7 +33,4 @@ object Day2PasswordPhilosophy1 {
   }
 
 
-}
-
-case class PassData(min: Int, max: Int, char: String, password: String) {
 }

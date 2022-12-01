@@ -1,4 +1,4 @@
-package ge.dm
+package ge.dm.year2020
 
 import scala.collection.mutable.ListBuffer
 
@@ -23,7 +23,7 @@ object Day13ShuttleSearch2 {
     var count = 0
     for (i <- bus) {
       if (!i.equals("x")) {
-        data.addOne(BusIndex(i.toInt, count))
+        data += BusIndex(i.toInt, count)
       }
       count += 1
     }

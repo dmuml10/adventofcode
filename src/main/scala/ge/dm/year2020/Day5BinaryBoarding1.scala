@@ -1,4 +1,4 @@
-package ge.dm
+package ge.dm.year2020
 
 import scala.collection.mutable.ArrayBuffer
 
@@ -24,7 +24,7 @@ object Day5BinaryBoarding1 {
       val column = parseColumn(line.substring(7))
 
       val id = row * 8 + column
-      list.addOne(id)
+      list += id
     }
 
     val sorted = scala.util.Sorting.stableSort(list)

@@ -1,4 +1,4 @@
-package ge.dm
+package ge.dm.year2020
 
 object Day11SeatingSystem1 {
 

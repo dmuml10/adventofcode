@@ -1,6 +1,6 @@
-package ge.dm
+package ge.dm.year2020
 
-object Day3TobogganTrajectory1 {
+object Day3TobogganTrajectory2 {
 
   val numRows = 323
   val numColumns = 31
@@ -30,10 +30,14 @@ object Day3TobogganTrajectory1 {
   }
 
 
-  def solve(filename: String): Int = {
+  def solve(filename: String): Long = {
     val matrix = readFile(filename)
 
-    calculate(1, 3, matrix)
+    1l * calculate(1, 1, matrix) *
+      calculate(1, 3, matrix) *
+      calculate(1, 5, matrix) *
+      calculate(1, 7, matrix) *
+      calculate(2, 1, matrix)
   }
 
   private def calculate(r: Int, c: Int, array: Array[Array[Char]]): Int =  {

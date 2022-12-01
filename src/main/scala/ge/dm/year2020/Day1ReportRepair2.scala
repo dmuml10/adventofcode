@@ -1,4 +1,4 @@
-package ge.dm
+package ge.dm.year2020
 
 object Day1ReportRepair2 {
 
