@@ -1,1 +1,1 @@
-# Solutions for adventofcode challange
+# Solutions for [adventofcode](https://adventofcode.com/) challenge
