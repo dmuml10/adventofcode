@@ -12,7 +12,7 @@ public class CampCleanup {
 
     public static long solve() {
         List<String> lines =
-                JReader.ReadFileAsString("src/resources/year2022/Day4CampCleanup.txt");
+                JReader.ReadFileAsStringList("src/resources/year2022/Day4CampCleanup.txt");
 
         return lines.stream().filter(CampCleanup::containsOther).count();
     }

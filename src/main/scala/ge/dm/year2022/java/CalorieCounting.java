@@ -12,7 +12,7 @@ public class CalorieCounting {
 
     public static int solve() {
         List<String> lines =
-                JReader.ReadFileAsString("src/resources/year2022/Day1CalorieCounting.txt");
+                JReader.ReadFileAsStringList("src/resources/year2022/Day1CalorieCounting.txt");
 
         int sum=0;
         int max=0;

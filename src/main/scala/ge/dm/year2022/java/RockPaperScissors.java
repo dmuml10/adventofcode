@@ -15,7 +15,7 @@ public class RockPaperScissors {
 
     public static int solve() {
         var list =
-                JReader.ReadFileAsString("src/resources/year2022/Day2RockPaperScissors.txt");
+                JReader.ReadFileAsStringList("src/resources/year2022/Day2RockPaperScissors.txt");
 
         return list.stream()
                 .map(RockPaperScissors::calculateScore)

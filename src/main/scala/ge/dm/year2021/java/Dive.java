@@ -5,7 +5,7 @@ import ge.dm.utils.JReader;
 public class Dive {
 
     public static void main(String[] args) {
-        var data = JReader.ReadFileAsString("src/resources/year2021/Day2Dive.txt");
+        var data = JReader.ReadFileAsStringList("src/resources/year2021/Day2Dive.txt");
 
         int h = 0;
         int d = 0;

@@ -11,7 +11,7 @@ public class RucksackReorganization {
     }
 
     public static int solve() {
-        var lines = JReader.ReadFileAsString("src/resources/year2022/Day3RucksackReorganization.txt");
+        var lines = JReader.ReadFileAsStringList("src/resources/year2022/Day3RucksackReorganization.txt");
 
         return lines.stream()
                 .map(RucksackReorganization::checkRuckSack)

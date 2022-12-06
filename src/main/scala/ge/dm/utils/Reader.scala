@@ -9,6 +9,14 @@ object Reader {
     lines
   }
 
+  def readLine(filename: String): String = {
+    val bufferedSource = io.Source.fromFile(filename)
+    val line = (for (line <- bufferedSource.getLines()) yield line).toList.head
+    bufferedSource.close
+    line
+  }
+
+
   def readFileLong(filename: String): Seq[Long] = {
     val bufferedSource = io.Source.fromFile(filename)
     val lines = (for (line <- bufferedSource.getLines()) yield line.toLong).toList

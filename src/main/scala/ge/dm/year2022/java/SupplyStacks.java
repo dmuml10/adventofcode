@@ -11,7 +11,7 @@ public class SupplyStacks {
     private static List<Stack<Character>> boxes = new ArrayList<>();
 
     public static void main(String[] args) {
-        var lines = JReader.ReadFileAsString("src/resources/year2022/Day5SupplyStacks.txt");
+        var lines = JReader.ReadFileAsStringList("src/resources/year2022/Day5SupplyStacks.txt");
 
         for (int i=0; i<9; i++) {
             boxes.add(new Stack<>());
