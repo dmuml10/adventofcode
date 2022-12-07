@@ -8,7 +8,15 @@ object TuningTrouble {
   }
 
   def solve(): Int = {
-    val data = Reader.readLine("src/resources/year2022/Day6TuningTrouble.txt")
-    0
+    val line = Reader.readLine("src/resources/year2022/Day6TuningTrouble.txt")
+    for (i <- 3 to line.length) {
+      val set = scala.collection.mutable.Set[Char]()
+      set.add(line.charAt(i - 3))
+      set.add(line.charAt(i - 2))
+      set.add(line.charAt(i - 1))
+      set.add(line.charAt(i))
+      if (set.size == 4) return i + 1
+    }
+    -1
   }
 }
