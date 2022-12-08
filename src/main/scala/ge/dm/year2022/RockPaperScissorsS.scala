@@ -2,7 +2,7 @@ package ge.dm.year2022
 
 import ge.dm.utils.Reader
 
-object RockPaperScissors {
+object RockPaperScissorsS {
 
   val symbols: Map[String, Int]
   = Map("A" -> 1, "B" -> 2, "C" -> 3, "X" -> 1, "Y" -> 2, "Z" -> 3)

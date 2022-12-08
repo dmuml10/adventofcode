@@ -1,7 +1,7 @@
 package ge.dm.year2021
 
 import ge.dm.utils.Reader
-import ge.dm.year2022.CalorieCounting.solve
+import ge.dm.year2022.CalorieCountingS.solve
 
 object SonarSweep {
 

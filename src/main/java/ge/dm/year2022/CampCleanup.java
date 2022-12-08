@@ -1,6 +1,4 @@
-package ge.dm.year2022.java;
-
-import ge.dm.utils.JReader;
+package ge.dm.year2022;
 
 import java.util.List;
 
@@ -14,7 +12,7 @@ public class CampCleanup {
         List<String> lines =
                 JReader.ReadFileAsStringList("src/resources/year2022/Day4CampCleanup.txt");
 
-        return lines.stream().filter(CampCleanup::containsOther).count();
+        return lines.stream().filter(CampCleanupS::containsOther).count();
     }
 
     public static boolean containsOther(String line) {

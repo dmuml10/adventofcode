@@ -1,6 +1,4 @@
-package ge.dm.year2022.java;
-
-import ge.dm.utils.JReader;
+package ge.dm.year2022;
 
 import java.util.stream.Collectors;
 
@@ -25,7 +23,7 @@ public class RucksackReorganization {
                 .collect(Collectors.toSet());
         return items.substring(items.length()/2).chars().mapToObj((i) -> (char) i)
                 .filter(set::contains)
-                .findFirst().map(RucksackReorganization::calculateScore).get();
+                .findFirst().map(RucksackReorganizationS::calculateScore).get();
     }
 
     public static int calculateScore(char ch) {

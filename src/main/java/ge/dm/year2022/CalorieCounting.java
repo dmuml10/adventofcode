@@ -1,13 +1,14 @@
-package ge.dm.year2022.java;
-
-import ge.dm.utils.JReader;
+package ge.dm.year2022;
 
 import java.util.List;
+import java.util.concurrent.ThreadLocalRandom;
 
 public class CalorieCounting {
 
     public static void main(String[] args) {
-        System.out.println(solve());
+        for (int i=0; i< 100; i++)
+            System.out.println(ThreadLocalRandom.current().nextInt(1));
+        //System.out.println(solve());
     }
 
     public static int solve() {

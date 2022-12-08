@@ -1,6 +1,6 @@
 package ge.dm.year2021.java;
 
-import ge.dm.utils.JReader;
+import ge.dm.year2022.JReader;
 
 public class Dive {
 

@@ -1,4 +1,4 @@
-package ge.dm.utils;
+package ge.dm.year2022;
 
 import java.io.IOException;
 import java.nio.file.Files;

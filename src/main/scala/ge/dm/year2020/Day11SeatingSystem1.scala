@@ -109,7 +109,7 @@ object Day11SeatingSystem1 {
     val replica = Array.ofDim[Char](matrix.length,matrix(0).length)
     for (i <- matrix.indices) {
       for (j <- matrix(i).indices) {
-        replica(i)(j) = matrix(i).charAt(j)
+        replica(i)(j) = matrix(i)(j)
       }
     }
     replica

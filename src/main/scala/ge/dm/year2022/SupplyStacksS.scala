@@ -2,7 +2,7 @@ package ge.dm.year2022
 
 import ge.dm.utils.Reader
 
-object SupplyStacks {
+object SupplyStacksS {
 
   def main(args: Array[String]): Unit = {
     print(solve())

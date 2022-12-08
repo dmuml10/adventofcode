@@ -1,6 +1,4 @@
-package ge.dm.year2022.java;
-
-import ge.dm.utils.JReader;
+package ge.dm.year2022;
 
 import java.util.Map;
 

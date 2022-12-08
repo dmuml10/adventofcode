@@ -2,7 +2,7 @@ package ge.dm.year2022
 
 import ge.dm.utils.Reader
 
-object CalorieCounting {
+object CalorieCountingS {
 
   def main(args: Array[String]): Unit = {
     print(solve())
