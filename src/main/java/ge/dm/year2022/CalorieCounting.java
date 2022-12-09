@@ -6,9 +6,7 @@ import java.util.concurrent.ThreadLocalRandom;
 public class CalorieCounting {
 
     public static void main(String[] args) {
-        for (int i=0; i< 100; i++)
-            System.out.println(ThreadLocalRandom.current().nextInt(1));
-        //System.out.println(solve());
+        System.out.println(solve());
     }
 
     public static int solve() {
